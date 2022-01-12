@@ -1,7 +1,7 @@
-import pandas as pd
+import pandas
 
 # Reads the phonetic alphabet data
-df = pd.read_csv("nato_phonetic_alphabet.csv")
+df = pandas.read_csv("nato_phonetic_alphabet.csv")
 
 # Create a dictionary where key: value is letter: code
 phonetic_alphabet_dict = {row.letter: row.code for (index, row) in df.iterrows()}
